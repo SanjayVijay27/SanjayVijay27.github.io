@@ -59,4 +59,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Image Modal Logic
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeSpan = document.querySelector(".close");
+
+    // Add click event to all images inside project-media
+    document.querySelectorAll('.project-media img').forEach(img => {
+        img.addEventListener('click', function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+    });
+
+    if (closeSpan) {
+        closeSpan.onclick = function () {
+            modal.style.display = "none";
+        }
+    }
+
+    // Close on click outside the image
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
 });

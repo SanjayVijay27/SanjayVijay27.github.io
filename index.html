@@ -237,11 +237,38 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Description of the project.</p>
-                                <!-- FILL IN: What does the project do? Tech stack? -->
+                                <p>I competed in HackTech 2025, a hackathon organized and hosted by Caltech for
+                                    undergraduates around the world. At the hackathon, I met <a
+                                        href="https://linkedin.com/in/ohmrajpal" target="_blank"
+                                        class="content-link">Ohm Rajpal</a>, <a
+                                        href="https://linkedin.com/in/arnab-ghosh819" target="_blank"
+                                        class="content-link">Arnab Ghosh</a>, and <a
+                                        href="https://linkedin.com/in/vickie-knight" target="_blank"
+                                        class="content-link">Vickie Knight</a>, and we collaborated to create
+                                    Neurosphere, a web application that locates and classifies brain tumors from
+                                    uploaded MRI scans. It also enhances visualization of the brain, enabling doctors to
+                                    have a readily accessible map of a tumor's location.</p>
+                                <p>Since I had experience with machine learning, I was responsible for tumor location
+                                    and classification. I found a dataset on Kaggle with MRI images of brain tumors with
+                                    labels for tumor type. I used PyTorch to load the pre-trained ResNet CNN model and
+                                    fine-tune it on the dataset for tumor classification. After achieving 98% test
+                                    accuracy, I researched methods to locate the detected tumors for improved
+                                    functionality. I discovered the Grad-CAM method, which uses activation outputs in
+                                    the neural network to report the most relevant layers. In a CNN, this corresponds to
+                                    regions in the image where the relevant features are most likely. This enabled our
+                                    app to highlight regions in the MRI scan where the tumor is most likely located. I
+                                    implemented this algorithm in our application, representing the output with a
+                                    heatmap through Matplotlib, and it made a valuable addition to our app. I also used
+                                    the center and spread of the Grad-CAM distribution to determine the brain lobe
+                                    containing the tumor and approximate the tumor's size respectively.</p>
+                                <p>My teammates worked on other aspects of the website, including the frontend, backend,
+                                    database, and the brain visualizer. We seamlessly integrated the model that I had
+                                    trained, and the result was a fully functional app. We submitted our project to the
+                                    health track of HackTech 2025, and we won the "Best Use of MongoDB" award. In
+                                    addition, we were specially chosen for an interview with representatives from Major
+                                    Leage Hacking to demonstrate our project for social media.</p>
                                 <div class="project-media">
-                                    <!-- FILL IN: Optional screenshots or demo images -->
-                                    <div class="media-placeholder">App Screenshot</div>
+                                    <img src="images/neurosphere.png" alt="Neurosphere Screenshot">
                                 </div>
                             </div>
                         </div>
@@ -259,12 +286,38 @@
                                     <div class="links">
                                         <a href="https://github.com/SanjayVijay27/safe-swing" target="_blank"
                                             class="icon-link"><i class="fa fa-github"></i></a>
+                                        <a href="https://docs.google.com/presentation/d/1RJBIHDJoxVPzxX4GeekpO_KA-CyPV9Ih2_QK83ynDSc/edit?usp=sharing"
+                                            target="_blank" class="icon-link"><i
+                                                class="fa fa-file-powerpoint-o"></i></a>
                                     </div>
                                 </div>
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>A cool utility tool I built.</p>
+                                <p>I worked with <a href="https://linkedin.com/in/jack-whitman" target="_blank"
+                                        class="content-link">Jack Whitman</a> at Blueprint 2024, a hackathon
+                                    organized and hosted by MIT for high schoolers around the country, to build
+                                    Safe-Swing, a prototype to prevent dooring accidents. Jack and I are cyclists
+                                    ourselves, and it's sometimes worrying to ride past a row of parked cars in a busy
+                                    area. At any moment, you could slam into a suddenly opened car door and face a
+                                    severe injury. To address this, we wanted to design an effective solution.</p>
+                                <p>Our project involves a detection program connected to an Arduino circuit and a camera
+                                    stream. The camera stream detects incoming members of traffic and locks the door
+                                    servo on our Arduino circuit, preventing what would be a dooring accident in real
+                                    life. We wired an Arduino circuit ourselves and used a Python library to interface
+                                    with the rest of the program. We used OpenCV to process camera input, and we loaded
+                                    the YOLOv5 modle with PyTorch to detect incoming traffic. We wanted to use the SORT
+                                    library to add a Kalman filter to track detected objects, but it was difficult to
+                                    intregrate. We developed our own heuristic based on the change in object size to
+                                    estimate incoming speed.</p>
+                                <p>Blueprint 2024 had a beginner division and a general division, which had over 60
+                                    competing teams. Our project won second place in the general division, winning a
+                                    $300 cash prize and a $1000 scholarship.</p>
+                                <div class="project-media">
+                                    <img src="images/safeswingdemo.jpg" alt="Safe Swing Demo">
+                                    <img src="images/safeswingdoor.jpg" alt="Safe Swing Door">
+                                    <img src="images/safeswingaward.jpg" alt="Safe Swing Award">
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -299,6 +352,12 @@
         </div>
         <button id="scrollToTopBtn" aria-label="Jump to top">↑</button>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <script src="script.js"></script>
 </body>
