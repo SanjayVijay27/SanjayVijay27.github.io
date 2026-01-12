@@ -48,7 +48,7 @@
                         RoboMaster club, where I've improved computer vision and navigation for our autonomous robots
                         and taught new members the skills to do the same. I'm also a researcher at Purdue's Cognitive
                         Robot Autonomy and Learning (CoRAL) Lab, where I'm working on adapting splatting algorithms for
-                        dark environments. This semester, I'll be a teaching assistant for CS 18200: Foundations of
+                        dark environments. This semester, I became a teaching assistant for CS 18200: Foundations of
                         Computer Science and CS 21100: Competitive Programming I. When it comes to industry experience,
                         I've been a summer intern at Draper under the Autonomy and Real-Time Planning Group twice,
                         working on embedded systems, sensor fusion, and vehicle data analysis. Feel free to reach out
@@ -83,12 +83,10 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Description of the role and achievements.</p>
-                                <!-- FILL IN: Detailed description of what you did. -->
-                                <ul>
-                                    <li>Implemented cool feature X.</li>
-                                    <li>Optimized performance by Y%.</li>
-                                </ul>
+                                <p>I am a TA for CS 18200: Foundations of Computer Science and CS 21100: Competitive
+                                    Programming I. I hold office hours to assist students with homework and content
+                                    understanding. I also hold practice sessions to foster enhanced understanding of
+                                    material. Lastly, I also grade student homework.</p>
                             </div>
                         </div>
                     </article>
@@ -107,7 +105,10 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Worked on internal tools and automation.</p>
+                                <p>At the Cognitive Robot Autonomy and Learning (CoRAL) Lab, I'm working on 3D mapping
+                                    from images captured in ultra-low-light environments. I'm exploring splatting
+                                    techniques like Gaussian Splatting, InstantSplat, and MAST3R. Currently, I'm
+                                    verifying the results of InstantSplat with PyTorch in our own environment.</p>
                             </div>
                         </div>
                     </article>
@@ -126,7 +127,20 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Worked on internal tools and automation.</p>
+                                <p>RoboMaster is an international robotics competition at the collegiate level. Robots
+                                    fire projectiles at each other to score points in a match.</p>
+                                <p>Most of my work during freshman year was for automatic aim. I used image segmentation
+                                    and contour fitting with OpenCV to locate targets on enemy robots. I later did
+                                    calculations for coordinate transformations from our camera perspective to our
+                                    cannon perspective. To enhance the aim, I worked on a lookup table to determine
+                                    cannon pitch from target distance. All of these algorithms run under ROS pipelines
+                                    that I helped design.</p>
+                                <p>I then became a lead for the subteam. I developed an onboarding assignment for new
+                                    members and recruited 30 members to the subteam. I also led workshops to teach
+                                    concepts in computer vision, navigation, and ROS for competition. We also began work
+                                    on autonomous LiDAR-based navigation for a sentry robot. I used the Nav2 framework
+                                    to run SLAM on the competition field and tune planners and controllers, eliminating
+                                    all obstacle collisions.</p>
                             </div>
                         </div>
                     </article>
@@ -145,26 +159,15 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Worked on internal tools and automation.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Math Tutor -->
-                    <article class="timeline-item">
-                        <div class="content-box">
-                            <div class="header" role="button" tabindex="0" aria-expanded="false">
-                                <div class="logo-box">
-                                    <span><img src="images/purdue.jpg" alt="User"></span>
-                                </div>
-                                <div class="title-group">
-                                    <h3>Purdue University</h3>
-                                    <span class="position">Mathematics Tutor</span>
-                                </div>
-                                <span class="toggle-icon">+</span>
-                            </div>
-                            <div class="details">
-                                <p>Worked on internal tools and automation.</p>
+                                <p>In 2025, I worked on a library for autonomous underwater vehicle (AUV) analysis. The
+                                    library's purpose is post-mission data analysis from both simulation and in-water
+                                    data. The current library used MATLAB and consequently had a license dependency. I
+                                    transitioned the library from MATLAB to Python, eliminating the licensing cost.</p>
+                                <p>Using C++, I wrote automation scripts to generate data loader Python files for all
+                                    data objects from logs. I used SciPy and NumPy to load vehicle data from .mat files
+                                    into Python. With data utilities now in Python, I enhanced the visualizations from
+                                    the old MATLAB library using the Plotly and Dash frameworks. My new plots were more
+                                    interactive and formed a more scalable foundation for more data visualization.</p>
                             </div>
                         </div>
                     </article>
@@ -183,7 +186,26 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Worked on internal tools and automation.</p>
+                                <p>I joined the Autonomy and Real-Time Planning Group at Draper, and I worked on two
+                                    projects in 2024. For my first project, I worked with a team of engineering interns
+                                    to design a prototype for a lunar micro rover. I led the team's software efforts,
+                                    starting with the design of a state machine for movement. I later configured a
+                                    Raspberry Pi 5 to enable I2C communication with our sensors over GPIO. Using Python
+                                    libraries, I enabled teleoperation of our rover and sensor telemetry. I also made
+                                    calculations for our drivetrain's inverse kinematics to facilitate teleoperated
+                                    motion. With my team, I documented design decisions and delivered presentations for
+                                    design reviews. We ultimately demonstrated teleoperation of our rover in a simulated
+                                    lunar environment.</p>
+                                <p>My second project involved enhancing an object tracking system using an extension of
+                                    Kalman filters. The system used Multiple Hypothesis Tracking (MHT), allowing it to
+                                    consider multiple candidates for an object's position. I thoroughly researched the
+                                    implementation of the Interacting Multiple Models (IMM) component of our MHT
+                                    architecture. In a traditional Kalman filter, there is one state transition matrix
+                                    that serves as a model for expected motion patterns. With IMM, multiple models can
+                                    have their own state transitions, and the algorithm can output a weighted result
+                                    based the likelihood of each model. I implemented IMM with MATLAB and integrated it
+                                    into an existing Unscented Kalman Filter design, enabling the system to robustly
+                                    track changing patterns in motion.</p>
                             </div>
                         </div>
                     </article>
@@ -202,7 +224,22 @@
                                 <span class="toggle-icon">+</span>
                             </div>
                             <div class="details">
-                                <p>Worked on internal tools and automation.</p>
+                                <p>I was a student at MIT Beaver Works Summer Institute, a selective summer program
+                                    organized and hosted by MIT for high school students. I took the Autonomous RACECAR
+                                    course, where students learn about concepts in robot autonomy and work in groups to
+                                    program small racecars to traverse race courses. I attended lectures and completed
+                                    lab assignments to learn about topics like ROS, OpenCV, CNNs, SLAM, Kalman filters,
+                                    PID control, and LiDAR point cloud processing. Each week ended with a race on a
+                                    track that tested the content from that week's lectures. Each class also began with
+                                    a short competitive programming competition.</p>
+                                <p>I led the software implementation for my team's ideas, which involved tuning color
+                                    segmentation for line following, writing a PID controller from scratch, and
+                                    implementing wall following with LiDAR data. My team won every weekly race, and for
+                                    the Grand Prix at the end of the course, we had the best time trial score. Based on
+                                    the daily programming competitions and an exam on the course material, I was ranked
+                                    3rd in my class of 30 students. For my performance in the course, Draper, who
+                                    sponsored our course, recruited me for a software engineering internship the next
+                                    summer.</p>
                             </div>
                         </div>
                     </article>
@@ -306,9 +343,9 @@
                                     servo on our Arduino circuit, preventing what would be a dooring accident in real
                                     life. We wired an Arduino circuit ourselves and used a Python library to interface
                                     with the rest of the program. We used OpenCV to process camera input, and we loaded
-                                    the YOLOv5 modle with PyTorch to detect incoming traffic. We wanted to use the SORT
+                                    the YOLOv5 model with PyTorch to detect incoming traffic. We wanted to use the SORT
                                     library to add a Kalman filter to track detected objects, but it was difficult to
-                                    intregrate. We developed our own heuristic based on the change in object size to
+                                    integrate. We developed our own heuristic based on the change in object size to
                                     estimate incoming speed.</p>
                                 <p>Blueprint 2024 had a beginner division and a general division, which had over 60
                                     competing teams. Our project won second place in the general division, winning a

@@ -278,7 +278,7 @@ h2 {
 }
 
 .content-box.active .details {
-    max-height: 1000px;
+    max-height: 2000px;
     /* Arbitrary large number */
     padding-bottom: var(--spacing-md);
     opacity: 1;
@@ -459,7 +459,7 @@ footer {
     max-height: 90vh;
     object-fit: contain;
     animation-name: zoom;
-    animation-duration: 0.3s;
+    animation-duration: 0.2s;
 }
 
 @keyframes zoom {
